@@ -1,10 +1,24 @@
 <!DOCTYPE html>
+<!-- Tells the browser this is an HTML5 document -->
+
 <html lang="en">
+<!-- Root element of the page, language set to English -->
+
 <head>
+    <!-- Metadata and settings for the page (not visible content) -->
+
     <meta charset="UTF-8" />
+    <!-- Ensures proper text encoding (handles symbols, letters, etc.) -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neil | Personal Portfolio</title>
+    <!-- Makes the site responsive on phones and different screen sizes -->
+
+    <title>Neil's Website</title>
+    <!-- Title shown in the browser tab -->
+
     <style>
+        /* ===== GLOBAL RESET =====
+           Removes default browser spacing and sets a consistent font */
         * {
             margin: 0;
             padding: 0;
@@ -12,14 +26,16 @@
             font-family: Arial, sans-serif;
         }
 
+        /* ===== PAGE BODY ===== */
         body {
-            background-color: #f5f5f5;
-            color: #222;
+            background-color: #e0e0e0;
+            color: #000000;
             line-height: 1.6;
         }
 
+        /* ===== HEADER (TOP SECTION) ===== */
         header {
-            background: #111;
+            background: #000000;
             color: white;
             padding: 2rem 1rem;
             text-align: center;
@@ -35,10 +51,12 @@
             color: #ccc;
         }
 
+        /* ===== MAIN CONTENT SECTIONS ===== */
         section {
-            max-width: 900px;
-            margin: 3rem auto;
+            max-width: 900px; /* Keeps content from stretching too wide */
+            margin: 3rem auto; /* Centers section horizontally */
             padding: 0 1.5rem;
+            text-align: center;
         }
 
         section h2 {
@@ -48,32 +66,8 @@
             padding-bottom: 0.5rem;
         }
 
-        .about p {
-            margin-bottom: 1rem;
-        }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-card h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .project-card p {
-            font-size: 0.95rem;
-            color: #555;
-        }
-
+        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -88,22 +82,41 @@
         }
     </style>
 </head>
+
 <body>
+    <!-- Everything inside <body> is visible on the page -->
 
     <header>
+        <!-- Main intro section at the top -->
         <h1>Neil</h1>
-        <p>Engineering Student | Research & Projects</p>
+        <p>Mathematics Student | Research & Projects</p>
     </header>
 
     <section>
-        <h2>Contact</h2>
-        <p>Email: telferneil2004@email.com</p>
-        <p>GitHub: <a href="https://github.com/kneeltyfer" target="_blank">github.com/kneeltyfer</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/neil-telfer-a7bb83207/" target="_blank">linkedin.com/in/neiltelfer</a></p>
+        <h2>Content coming soon...</h2>
 
+        <!-- Contact information section -->
+        <h3>Contact</h3>
+
+        <p>Email: telferneil2004@email.com</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/kneeltyfer" target="_blank">
+                github.com/kneeltyfer
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/neil-telfer-a7bb83207/" target="_blank">
+                linkedin.com/in/neiltelfer
+            </a>
+        </p>
     </section>
 
     <footer>
+        <!-- Footer at the very bottom -->
         <p>© 2025 Neil</p>
     </footer>
 
